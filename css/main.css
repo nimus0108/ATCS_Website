@@ -13,7 +13,8 @@ body {
 Landing
 **************/
 .landing {
-  background-image: url(img/bridge.jpg);
+  /*  
+  background-image: url(img/semi.jpg);
   position: static;
   z-index: -999;
   min-height: 80vh;
@@ -24,7 +25,19 @@ Landing
   margin: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -130px; }
+  margin-top: -130px;
+  */
+  display: table;
+  width: 100%;
+  height: 80vh;
+  padding: 100px 0;
+  text-align: center;
+  color: #fff;
+  background: url(img/bca.jpg) no-repeat bottom center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover; }
   .landing h1 {
     font-size: 4.0em;
     text-align: center;
@@ -34,9 +47,6 @@ Landing
     -webkit-text-fill-color: #FF9900;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black; }
-  .landing #first-header {
-    margin-top: 130px;
-    padding-top: 100px; }
   .landing #subheader {
     text-align: center;
     color: #FFF;
@@ -59,5 +69,37 @@ Our Class
   #our-class img {
     height: 80px;
     width: 80px; }
+
+a {
+  color: #000;
+  text-align: center; }
+
+a:hover {
+  text-decoration: none; }
+
+/******
+JS
+******/
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 690px;
+  left: 0;
+  position: absolute;
+  display: none;
+  text-align: center; }
+  #overlay img {
+    margin-top: 8%;
+    height: 300px;
+    width: 300px; }
+  #overlay ul {
+    color: #FFF;
+    margin: 30px 180px; }
+  #overlay a {
+    color: azure;
+    font-size: 2em; }
+  #overlay a:hover {
+    color: cornflowerblue; }
 
 /*# sourceMappingURL=main.css.map */
